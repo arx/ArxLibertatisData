@@ -1,12 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<application>
-  <id type="desktop">org.arx_libertatis.ArxLibertatis</id>
+<component type="desktop-application">
+  <id>org.arx_libertatis.arxlibertatis</id>
   <name>Arx Libertatis</name>
-  <developer_name>Arx Libertatis Contributors</developer_name>
+  <developer id="org.arx-libertatis">
+    <name>Arx Libertatis Contributors</name>
+    <url type="homepage">https://arx-libertatis.org/</url>
+  </developer>
   <summary>A cross-platform port of Arx Fatalis, a first-person role-playing game</summary>
   <metadata_license>CC0-1.0</metadata_license>
   <project_license>GPL-3.0</project_license>
+  <launchable type="desktop-id">org.arx_libertatis.arxlibertatis.desktop</launchable>
   <url type="homepage">https://www.arx-libertatis.org/</url>
+  <url type="bugtracker">https://bugs.arx-libertatis.org/</url>
+  <url type="help">https://wiki.arx-libertatis.org/FAQ</url>
+  <url type="vcs-browser">https://github.com/arx/ArxLibertatis</url>
   <description>
     <p>Arx Libertatis is an improved, cross-platform and open source engine for Arx Fatalis, a 2002 first-person role-playing game /
       dungeon crawler / immersive sim developed by Arkane Studios.</p>
@@ -70,4 +77,17 @@
     <content_attribute id="money-gambling">moderate</content_attribute>
   </content_rating>
   <update_contact>https://arx-libertatis.org/contact</update_contact>
+  <supports>
+    <control>gamepad</control>
+  </supports>
+  <recommends>
+    <control>keyboard</control>
+    <control>pointing</control>
+  </recommends>
+  <requires>
+    <internet>offline-only</internet>
+  </requires>
+  <provides>
+    <binary>arx</binary>
+  </provides>
 </application>
